@@ -23,7 +23,7 @@ $(function() {
   var lastTypingTime;
   var $currentInput = $usernameInput.focus();
 
-  var socket = io.connect('10.10.16.70:3000',{rememberTransport:true,timeout:1500});
+  var socket = io.connect('localhost:3000',{rememberTransport:true,timeout:1500});
 
   function addParticipantsMessage (data) {
     var message = '';
